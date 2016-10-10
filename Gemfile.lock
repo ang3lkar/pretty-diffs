@@ -1,0 +1,22 @@
+PATH
+  remote: .
+  specs:
+    pretty-diffs (1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.9.0)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.11)
+  minitest (~> 5.0)
+  pretty-diffs!
+  rake (~> 10.0)
+
+BUNDLED WITH
+   1.11.2
