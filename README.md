@@ -1,10 +1,10 @@
 # PrettyDiffs
 
-When you make assertions between large strings with minitest, for example JSON responses, it is laborious to identify what has changed. The usual workflow involves copy-pasting the output into a diff tool; a rather boring and time-consuming process.
+When you make assertions between large strings with Minitest, for example JSON responses, it is laborious to identify what has changed. The usual workflow involves copy-pasting the output into a diff tool; a rather boring and time-consuming process.
 
-Minitest chooses to compare strings using `diff`, which is line-oriented. However, 99% of the time, we do not intend to compare lines, we want just the words. 
+Minitest chooses to compare strings using `diff`, which is line-oriented. However, 99% of the time, we do not intend to compare lines, we want just the words.
 
-PrettyDiffs is a tool that supports this desire by overriding the default minitest method, and relieves our workflow.
+PrettyDiffs is a tool that supports this desire by overriding the default Minitest method, and relieves our workflow.
 ### Default Diff output
 ![before](./images/before.png)
 
@@ -18,7 +18,7 @@ Wdiff is a wrapper around diff,  it works by creating two temporary files, one w
 
 ```
 # mac
-$ brew install wdiff  
+$ brew install wdiff 
 
 # linux
 $ apt get-install wdiff 
@@ -30,7 +30,7 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test do
-  gem 'pretty_diffs'
+  gem 'pretty-diffs'
 end
 ```
 
@@ -43,7 +43,7 @@ $ bundle
 Or install it yourself as:
 
 ```
-$ gem install pretty_diffs
+$ gem install pretty-diffs
 ```
 
 ## Usage
