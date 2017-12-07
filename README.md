@@ -1,6 +1,6 @@
 # PrettyDiffs
 
-A small gem to lubricate your workflow with prettier than usual diffs.
+A small gem to lubricate your testing workflow with prettier than usual diffs.
 
 ## Motivation
 When you make assertions between large strings with Minitest, for example JSON responses, it is laborious to identify what has changed. The usual workflow involves copy-pasting the output into a diff tool; a rather boring and time-consuming process.
