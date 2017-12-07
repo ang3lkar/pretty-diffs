@@ -1,10 +1,14 @@
 # PrettyDiffs
 
+A small gem to lubricate your workflow with prettier than usual diffs.
+
+## Motivation
 When you make assertions between large strings with Minitest, for example JSON responses, it is laborious to identify what has changed. The usual workflow involves copy-pasting the output into a diff tool; a rather boring and time-consuming process.
 
 Minitest chooses to compare strings using `diff`, which is line-oriented. However, 99% of the time, we do not intend to compare lines, we want just the words.
 
 PrettyDiffs is a tool that supports this desire by overriding the default Minitest method, and relieves our workflow.
+
 ### Default Diff output
 ![before](./images/before.png)
 
@@ -46,7 +50,7 @@ Or install it yourself as:
 $ gem install pretty-diffs
 ```
 
-## Usage
+## How to use
 Include the module in the Minitest classes to trigger the pretty diffs:
 
 ```ruby
