@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    pretty-diffs (1.0)
+    pretty-diffs (1.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -19,4 +19,4 @@ DEPENDENCIES
   rake (~> 10.0)
 
 BUNDLED WITH
-   1.11.2
+   1.15.4
