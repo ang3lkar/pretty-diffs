@@ -71,6 +71,8 @@ In this rare case, set the following ENV variable:
 MINITEST_PLAIN_BORING_DIFF='yes'
 ```
 
+## Tasks for version 1.1.0
+* Pure JSON output instead of Hash when comparing JSON responses in controller tests, so to copy-paste directly.
 
 ## Contributing
 
