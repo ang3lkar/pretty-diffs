@@ -9,6 +9,7 @@ Minitest chooses to compare strings using `diff`, which is line-oriented. Howeve
 
 PrettyDiffs is a tool that supports this desire by overriding the default Minitest method, and relieves our workflow.
 
+## Screenshots
 ### Default Diff output
 ![before](./images/before.png)
 
@@ -58,7 +59,7 @@ require 'pretty_diffs'
 
 module ActiveSupport
    class TestCase
-    include PrettyDiffs
+    include PrettyDiffs # add this line
 
   end
 end
@@ -71,6 +72,11 @@ In this rare case, set the following ENV variable:
 MINITEST_PLAIN_BORING_DIFF='yes'
 ```
 
+## Tests
+```sh
+$ rake
+```
+
 ## Tasks for version 1.1.0
 * Pure JSON output instead of Hash when comparing JSON responses in controller tests, so to copy-paste directly.
 
@@ -81,3 +87,27 @@ MINITEST_PLAIN_BORING_DIFF='yes'
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2016 Angelos Karagkiozidis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
