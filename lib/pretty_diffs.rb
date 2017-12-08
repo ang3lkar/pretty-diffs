@@ -24,7 +24,7 @@ module PrettyDiffs
     end
 
     def verify_wdiff_in_path
-      %x{which wdiff}.present?
+      !%x{which wdiff}.empty?
     end
 
     def boring_diffs?
